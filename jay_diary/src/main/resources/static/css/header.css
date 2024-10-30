@@ -1,0 +1,47 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu > a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.submenu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu:hover .submenu {
+    display: block;
+}
